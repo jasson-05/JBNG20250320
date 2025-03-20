@@ -9,7 +9,7 @@ public partial class Brand
     public int BrandId { get; set; }
 
     [Required(ErrorMessage = "El nombre es obligatorio.")]
-    [Display(Name = "Nobre")]
+    [Display(Name = "Marca")]
     public string BrandName { get; set; } = null!;
 
     [Required(ErrorMessage = "El pais es obligatorio.")]

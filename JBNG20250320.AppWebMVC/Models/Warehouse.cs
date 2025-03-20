@@ -9,7 +9,7 @@ public partial class Warehouse
     public int WarehouseId { get; set; }
 
     [Required(ErrorMessage = "El Nombre es obligatorio.")]
-    [Display(Name = "Nombre")]
+    [Display(Name = "Bodega")]
     public string WarehouseName { get; set; } = null!;
 
     [Display(Name = "Nota")]

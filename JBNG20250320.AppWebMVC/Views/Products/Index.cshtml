@@ -22,10 +22,10 @@
                 @Html.DisplayNameFor(model => model.Price)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Brand)
+                @Html.DisplayNameFor(model => model.Brand.BrandName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Warehouse)
+                @Html.DisplayNameFor(model => model.Warehouse.WarehouseName)
             </th>
             <th></th>
         </tr>
@@ -43,15 +43,15 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Brand.BrandId)
+                @Html.DisplayFor(modelItem => item.Brand.BrandName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Warehouse.WarehouseId)
+                @Html.DisplayFor(modelItem => item.Warehouse.WarehouseName)
             </td>
             <td>
                 <a asp-action="Edit" class="btn btn-success" asp-route-id="@item.ProductId">Editar</a> |
                 <a asp-action="Details" class="btn btn-secondary" asp-route-id="@item.ProductId">Detalles</a> |
-                <a asp-action="Delete" class="btn-danger" asp-route-id="@item.ProductId">Eliminar</a>
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.ProductId">Eliminar</a>
             </td>
         </tr>
 }

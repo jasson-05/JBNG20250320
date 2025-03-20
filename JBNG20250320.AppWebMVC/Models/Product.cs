@@ -20,9 +20,11 @@ public partial class Product
     [Display(Name = "precio")]
     public decimal Price { get; set; }
 
+    [Required(ErrorMessage = "La bodega es obligatoria.")]
     [Display(Name = "Bodega")]
     public int? WarehouseId { get; set; }
 
+    [Required(ErrorMessage = "La marca es obligatoria.")]
     [Display(Name = "Marca")]
     public int? BrandId { get; set; }
 
